@@ -53,7 +53,7 @@ if __name__ == '__main__':
     parser.add_argument('--motor_enable_pin', required=False, type=int, default=25, help='GPIO PIN connected to the L298N motor driver ENABLE PIN')
     parser.add_argument('--motor_speed', required=False, type=float, default=1.0, help='motor speed (0,1>')
 
-    parser.add_argument('--lsensor_sample_rate', required=False, type=int, default=30, help='TCRT5000 (+ LM393) proximity sensor sample rate in Hz')
+    parser.add_argument('--lsensor_sample_rate', required=False, type=int, default=300, help='TCRT5000 (+ LM393) proximity sensor sample rate in Hz')
     parser.add_argument('--lsensor_pin', required=False, type=int, default=16, help='GPIO PIN connected to the TCRT5000 (+ LM393) proximity sensor')
     parser.add_argument('--lsensor_resolution_deg', required=False, type=float, default=1.0, help='optical encoder wheel resolution in degrees')
 
